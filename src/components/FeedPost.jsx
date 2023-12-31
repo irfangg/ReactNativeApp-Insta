@@ -7,6 +7,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import Feather from "react-native-vector-icons/Feather";
 import { useState } from "react";
 import DoublePress from "../utils/DoublePress";
+import Carousel from "./Carousel";
 
 export default function FeedPost({ post }) {
   const [isLiked, setIsLiked] = useState(false);
@@ -29,14 +30,20 @@ export default function FeedPost({ post }) {
         <Text style={styles.avtarName}>{post.user.name}</Text>
         <Entypo name="dots-three-horizontal" size={16} style={styles.dotIcon} />
       </View>
-      <DoublePress onDoublePress={toggleLike}>
-        <Image
-          source={{
-            uri: post.image,
-          }}
-          style={styles.postImg}
-        />
-      </DoublePress>
+      {post.image ? (
+        <DoublePress onDoublePress={toggleLike}>
+          <Image
+            source={{
+              uri: post.image,
+            }}
+            style={styles.postImg}
+          />
+        </DoublePress>
+      ) : (
+        post.images && (
+          <Carousel data={post.images} onDoublePress={toggleLike} />
+        )
+      )}
       <View style={styles.iconContainer}>
         <AntDesign
           name={isLiked ? "heart" : "hearto"}
@@ -118,4 +125,5 @@ const styles = StyleSheet.create({
     padding: 5,
     // marginHorizontal:'auto'
   },
+  carousel: {},
 });

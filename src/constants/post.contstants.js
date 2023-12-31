@@ -7,7 +7,14 @@ const POSTDATA = {
                 name: 'Irfan G G',
                 profile_picture: 'https://img.freepik.com/free-photo/view-3d-man-holding-laptop_23-2150709818.jpg?size=626&ext=jpg&ga=GA1.1.1252276129.1703776781&semt=sph'
             },
-            image: 'https://img.freepik.com/free-photo/ai-nuclear-energy-background-future-innovation-disruptive-technology_53876-129783.jpg?size=626&ext=jpg&ga=GA1.1.1252276129.1703776781&semt=sph',
+            images: [
+                'https://img.freepik.com/free-photo/ai-nuclear-energy-background-future-innovation-disruptive-technology_53876-129783.jpg?size=626&ext=jpg&ga=GA1.1.1252276129.1703776781&semt=sph',
+                'https://img.freepik.com/free-photo/medium-shot-man-wearing-vr-glasses_23-2149126949.jpg?size=626&ext=jpg&ga=GA1.1.1252276129.1703776781&semt=sph',
+                'https://img.freepik.com/premium-photo/artificial-intelligence-with-machine-deep-learning-data-mining-other-modern-user-interface-futuristic-innovative-technologies-generative-ai_76964-17821.jpg?size=626&ext=jpg&ga=GA1.1.1252276129.1703776781&semt=sph',
+                'https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041866.jpg?size=626&ext=jpg&ga=GA1.1.1252276129.1703776781&semt=sph',
+                'https://img.freepik.com/premium-photo/technology-humans_818771-397.jpg?size=626&ext=jpg&ga=GA1.1.1252276129.1703776781&semt=sph'
+            ],
+            // image: 'https://img.freepik.com/free-photo/ai-nuclear-energy-background-future-innovation-disruptive-technology_53876-129783.jpg?size=626&ext=jpg&ga=GA1.1.1252276129.1703776781&semt=sph',
             caption: 'Future of technology',
             likes: 10000,
             comments: [{
